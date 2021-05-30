@@ -8,24 +8,23 @@ function computerPlay(){
     console.log("Computer playing: ",i);
     return i;
 }
-
+let option = prompt("Rock / Paper / Scissors: ").toLowerCase();
 
 function round(playerSelection, computerSelection){
-    let option = prompt("Rock / Paper / Scissors: ").toLowerCase();
     if (option == 'rock' || option == 'paper' || option == 'scissors'){
-        console.log("\nYou selected: ", option);
+        // console.log("\nYou selected: ", option);
         if (option =='rock' && computerSelection == 'scissors') {
-            console.log('You Win! Rock beats Scissors');
+            return alert('You Win! Rock beats Scissors');
         } else if (option =='paper' && computerSelection == 'rock'){
-            console.log("You Win! Paper beats Rock!");
+            return alert("You Win! Paper beats Rock!");
         } else if (option =='scissors' && computerSelection == 'paper'){
-            console.log("You Win! Scissors beats Paper!");
+            return alert("You Win! Scissors beats Paper!");
         } else if (option =='scissors' && computerSelection == 'rock') {
-            console.log('You Lose! Rock beats Scissors');
+            return alert('You Lose! Rock beats Scissors');
         } else if (option =='rock' && computerSelection == 'paper'){
-            console.log("You Lose! Paper beats Rock!");
+            return alert("You Lose! Paper beats Rock!");
         } else if (option =='paper' && computerSelection == 'scissors'){
-            console.log("You Lose! Scissors beats Paper!");
+            return alert("You Lose! Scissors beats Paper!");
         }
     } else{
         return alert("You can't select other items!");
@@ -34,4 +33,4 @@ function round(playerSelection, computerSelection){
 
 const computerSelection = computerPlay();
 //computerPlay();
-round();
+round(option,computerSelection);
