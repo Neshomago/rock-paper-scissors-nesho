@@ -8,5 +8,18 @@
     <script src="game.js"></script>
 </head>
 <body>
+    <div style="display: flex;justify-content: center;align-items: center;">
+        <div>
+            <button id="reload">Reload</button>
+        </div>
+    </div>
 </body>
+<script>
+    let btn = document.getElementById("reload");
+    function thReload(){
+        location.reload();
+    }
+
+    btn.onclick(thReload());
+</script>
 </html>
