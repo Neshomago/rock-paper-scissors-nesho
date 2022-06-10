@@ -45,7 +45,7 @@ function round(playerSelection, computerSelection){
 }
 
 function game(){
-    for(let i=0; i <=5; i++){
+/*     for(let i=0; i <=5; i++){
         round(option,computerSelection);
     }
     if(scoreP > scoreC){
@@ -54,7 +54,7 @@ function game(){
         return alert("So sad! You've lost\nScore: "+scoreC);
     }else{
         return alert("It was a hard game! Everyone wins!");
-    }
+    } */
 }
 //computerPlay();
 game();
