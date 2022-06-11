@@ -1,5 +1,8 @@
 let option = "";
 let scoreP=0, scoreC=0;
+let rock = document.getElementById('rock');
+let paper = document.getElementById('paper');
+let scissors = document.getElementById('scissors');
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -45,7 +48,7 @@ function round(playerSelection, computerSelection){
 }
 
 function game(){
-/*     for(let i=0; i <=5; i++){
+    for(let i=0; i <=5; i++){
         round(option,computerSelection);
     }
     if(scoreP > scoreC){
@@ -54,8 +57,8 @@ function game(){
         return alert("So sad! You've lost\nScore: "+scoreC);
     }else{
         return alert("It was a hard game! Everyone wins!");
-    } */
+    }
 }
 //computerPlay();
-game();
+//game();
 
